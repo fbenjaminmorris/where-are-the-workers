@@ -391,3 +391,13 @@ function addEmployee() {
         ],
         function (err, res) {
           if (err) throw err;
+
+          console.table(res);
+          console.log(res.affectedRows + "Updated successfully!");
+
+          firstPrompt();
+        });
+      // console.log(query.sql);
+    });
+}
+
